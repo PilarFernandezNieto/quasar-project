@@ -8,7 +8,11 @@ import MyCard from 'src/components/MyCard.vue'
 </script>
 <style lang="scss" scoped>
 .q-page {
-  width: 40%;
+  // width: 100%;
   margin: 0 auto;
+  // @media (min-width: 998px) {
+  //   // puedes ajustar este valor según lo necesites
+  //   width: 50%;
+  // }
 }
 </style>
