@@ -1,13 +1,14 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+  <q-page class="q-pa-md column items-center">
+    <MyCard v-for="i in 5" :key="i" />
   </q-page>
 </template>
-
 <script setup>
-//
+import MyCard from 'src/components/MyCard.vue'
 </script>
+<style lang="scss" scoped>
+.q-page {
+  width: 40%;
+  margin: 0 auto;
+}
+</style>
